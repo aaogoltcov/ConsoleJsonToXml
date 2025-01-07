@@ -53,3 +53,9 @@ var jsonFile =
 var weather = JsonSerializer.Deserialize<WeatherInfo>(jsonFile, new JsonSerializerOptions() { IncludeFields = true });
 
 Console.WriteLine(weather);
+
+// task 3
+
+var weatherXmlSerializer = new XmlSerializer(typeof(WeatherInfo));
+
+weatherXmlSerializer.Serialize(Console.Out, weather);
