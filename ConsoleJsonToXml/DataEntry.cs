@@ -6,6 +6,5 @@ namespace ConsoleJsonToXml;
 public class DataEntry
 {
     [XmlAttribute] public string? LinkedEntry;
-
     [XmlElement("Data.Name")] public string? Name;
 }
